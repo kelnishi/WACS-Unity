@@ -13,7 +13,7 @@
 
    - Window>Package Manager
    - Click +  Add package from git URL...
-   - Enter the repo URL: ```https://github.com/kelnishi/WACS```
+   - Enter the repo URL: ```git@github.com:kelnishi/WACS-Unity.git```
    - Click Add
 
 ## Usage
