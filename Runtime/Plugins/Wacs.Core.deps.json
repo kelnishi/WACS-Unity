@@ -7,7 +7,7 @@
   "targets": {
     ".NETStandard,Version=v2.1": {},
     ".NETStandard,Version=v2.1/": {
-      "Wacs.Core/0.1.6": {
+      "Wacs.Core/0.2.0": {
         "dependencies": {
           "FluentValidation": "11.10.0",
           "Microsoft.Extensions.ObjectPool": "9.0.0"
@@ -35,7 +35,7 @@
     }
   },
   "libraries": {
-    "Wacs.Core/0.1.6": {
+    "Wacs.Core/0.2.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
