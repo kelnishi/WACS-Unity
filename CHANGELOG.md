@@ -2,6 +2,10 @@
 
 All notable changes to the unity package will be documented in this file.
 
+## [0.3.0]
+- Implemented JSPI-like async binding and execution
+- Hooked up more super-instruction threading
+
 ## [0.2.0]
 - Implemented super-instruction threading
 - Precomputed (non-allocating) block labels
