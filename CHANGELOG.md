@@ -2,6 +2,10 @@
 
 All notable changes to the unity package will be documented in this file.
 
+## [0.6.0]
+- wasm-gc extension
+- function-references extension
+
 ## [0.3.0]
 - Implemented JSPI-like async binding and execution
 - Hooked up more super-instruction threading
