@@ -7,10 +7,10 @@
   "targets": {
     ".NETStandard,Version=v2.1": {},
     ".NETStandard,Version=v2.1/": {
-      "Wacs.WASIp1/0.9.6": {
+      "Wacs.WASIp1/0.9.7": {
         "dependencies": {
-          "WACS": "0.6.0",
-          "Wacs.Core": "0.6.0.0"
+          "WACS": "0.7.1",
+          "Wacs.Core": "0.7.1.0"
         },
         "runtime": {
           "Wacs.WASIp1.dll": {}
@@ -32,30 +32,30 @@
           }
         }
       },
-      "WACS/0.6.0": {
+      "WACS/0.7.1": {
         "dependencies": {
           "FluentValidation": "11.10.0",
           "Microsoft.Extensions.ObjectPool": "9.0.0"
         },
         "runtime": {
           "Wacs.Core.dll": {
-            "assemblyVersion": "0.6.0",
-            "fileVersion": "0.6.0"
+            "assemblyVersion": "0.7.1",
+            "fileVersion": "0.7.1"
           }
         }
       },
-      "Wacs.Core/0.6.0.0": {
+      "Wacs.Core/0.7.1.0": {
         "runtime": {
           "Wacs.Core.dll": {
-            "assemblyVersion": "0.6.0.0",
-            "fileVersion": "0.6.0.0"
+            "assemblyVersion": "0.7.1.0",
+            "fileVersion": "0.7.1.0"
           }
         }
       }
     }
   },
   "libraries": {
-    "Wacs.WASIp1/0.9.6": {
+    "Wacs.WASIp1/0.9.7": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -74,12 +74,12 @@
       "path": "microsoft.extensions.objectpool/9.0.0",
       "hashPath": "microsoft.extensions.objectpool.9.0.0.nupkg.sha512"
     },
-    "WACS/0.6.0": {
+    "WACS/0.7.1": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Wacs.Core/0.6.0.0": {
+    "Wacs.Core/0.7.1.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

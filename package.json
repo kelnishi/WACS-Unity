@@ -1,6 +1,6 @@
 {
   "name": "com.kelnishi.wacs",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "displayName": "WACS - WebAssembly Interpreter",
   "description": "This package includes the WACS WebAssembly Interpreter runtime and Unity asset types for handling .wasm files.",
   "documentationUrl": "https://github.com/kelnishi/WACS-Unity/tree/main/Documentation~/manual.md",
