@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using System.Text;
 using UnityEngine;
+using UnityEngine.UI;
 using Wacs.Core;
 using Wacs.Core.Runtime;
 using Wacs.Core.Runtime.Types;
@@ -19,11 +20,11 @@ public class WasmRunner : MonoBehaviour
 
     private StringBuilder _output;
 
-    private TextMesh text;
+    private Text text;
     
     private void OnEnable()
     {
-        text = GetComponent<TextMesh>();
+        text = GetComponent<Text>();
         var stream = new MemoryStream(wasmAsset.data);
         var module = BinaryModuleParser.ParseWasm(stream);
         
@@ -46,7 +47,7 @@ public class WasmRunner : MonoBehaviour
             LogProgressEvery = 0, 
             LogInstructionExecution = InstructionLogging.None,
             CalculateLineNumbers = false,
-            CollectStats = false,
+            CollectStats = StatsDetail.None,
         };
 
         //Wasm/WASI entry points
