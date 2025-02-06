@@ -2,6 +2,9 @@
 
 All notable changes to the unity package will be documented in this file.
 
+## [0.7.3]
+- Reimplemented AOT compatible invoker bindings
+
 ## [0.7.2]
 - removing Linq.Expression for AOT compatibility
 
