@@ -53,7 +53,7 @@ public class WasmRunner : MonoBehaviour
         //Wasm/WASI entry points
         if (_moduleInstance.StartFunc != null)
         {
-            var caller = _runtime.CreateInvoker<Action>(_moduleInstance.StartFunc, callOptions);
+            var caller = _runtime.CreateInvokerAction(_moduleInstance.StartFunc, callOptions);
             try
             {
                 caller();
@@ -70,7 +70,7 @@ public class WasmRunner : MonoBehaviour
         }
         else if (_runtime.TryGetExportedFunction((moduleName, "main"), out var mainAddr))
         {
-            var caller = _runtime.CreateInvoker<Func<Value>>(mainAddr, callOptions);
+            var caller = _runtime.CreateInvokerFunc<Value>(mainAddr, callOptions);
             try
             {
                 int result = caller();
