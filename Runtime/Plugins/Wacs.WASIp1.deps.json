@@ -9,8 +9,8 @@
     ".NETStandard,Version=v2.1/": {
       "Wacs.WASIp1/0.9.7": {
         "dependencies": {
-          "WACS": "0.7.2",
-          "Wacs.Core": "0.7.2.0"
+          "WACS": "0.8.2",
+          "Wacs.Core": "0.8.2.0"
         },
         "runtime": {
           "Wacs.WASIp1.dll": {}
@@ -32,23 +32,32 @@
           }
         }
       },
-      "WACS/0.7.2": {
-        "dependencies": {
-          "FluentValidation": "11.10.0",
-          "Microsoft.Extensions.ObjectPool": "9.0.0"
-        },
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {
         "runtime": {
-          "Wacs.Core.dll": {
-            "assemblyVersion": "0.7.2",
-            "fileVersion": "0.7.2"
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
           }
         }
       },
-      "Wacs.Core/0.7.2.0": {
+      "WACS/0.8.2": {
+        "dependencies": {
+          "FluentValidation": "11.10.0",
+          "Microsoft.Extensions.ObjectPool": "9.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        },
         "runtime": {
           "Wacs.Core.dll": {
-            "assemblyVersion": "0.7.2.0",
-            "fileVersion": "0.7.2.0"
+            "assemblyVersion": "0.8.2",
+            "fileVersion": "0.8.2"
+          }
+        }
+      },
+      "Wacs.Core/0.8.2.0": {
+        "runtime": {
+          "Wacs.Core.dll": {
+            "assemblyVersion": "0.8.2.0",
+            "fileVersion": "0.8.2.0"
           }
         }
       }
@@ -74,12 +83,19 @@
       "path": "microsoft.extensions.objectpool/9.0.0",
       "hashPath": "microsoft.extensions.objectpool.9.0.0.nupkg.sha512"
     },
-    "WACS/0.7.2": {
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "WACS/0.8.2": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Wacs.Core/0.7.2.0": {
+    "Wacs.Core/0.8.2.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""

@@ -2,6 +2,14 @@
 
 All notable changes to the unity package will be documented in this file.
 
+## [0.8.2]
+- First-class WAT / WAST text-format parser in Wacs.Core — load `.wat` modules directly, no pre-compile step
+- New Wacs.Core.Components namespace: WIT IDL parser (component-model groundwork)
+- Spec-suite parity: 100% of WebAssembly 3.0 core `.wast` files parse and match the binary parser structurally
+- Picks up 0.8.0 / 0.8.1 runtime additions previously skipped in Unity:
+  - Source-generated switch runtime (opt-in via `runtime.UseSwitchRuntime = true`) — AOT-safe, IL2CPP-friendly, no `Reflection.Emit`. Resolves `System.Runtime.CompilerServices.Unsafe` from Unity's built-in BCL (no new plugin DLL shipped)
+  - Bytecode-stream super-instruction fuser for the switch runtime
+
 ## [0.7.3]
 - Reimplemented AOT compatible invoker bindings
 
