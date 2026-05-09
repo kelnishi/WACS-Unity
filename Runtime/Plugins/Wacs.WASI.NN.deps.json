@@ -7,14 +7,15 @@
   "targets": {
     ".NETStandard,Version=v2.1": {},
     ".NETStandard,Version=v2.1/": {
-      "Wacs.WASI.Preview1/0.12.0": {
+      "Wacs.WASI.NN/0.1.0": {
         "dependencies": {
           "WACS": "0.12.1",
+          "WACS.ComponentModel": "0.1.0",
           "WACS.HostBindings.Abstractions": "0.1.0",
           "Wacs.Core": "0.12.1.0"
         },
         "runtime": {
-          "Wacs.WASI.Preview1.dll": {}
+          "Wacs.WASI.NN.dll": {}
         }
       },
       "FluentValidation/11.10.0": {
@@ -83,6 +84,17 @@
           }
         }
       },
+      "WACS.ComponentModel/0.1.0": {
+        "dependencies": {
+          "WACS": "0.12.1"
+        },
+        "runtime": {
+          "Wacs.ComponentModel.dll": {
+            "assemblyVersion": "0.1.0",
+            "fileVersion": "0.1.0"
+          }
+        }
+      },
       "WACS.HostBindings.Abstractions/0.1.0": {
         "dependencies": {
           "System.Memory": "4.5.5"
@@ -105,7 +117,7 @@
     }
   },
   "libraries": {
-    "Wacs.WASI.Preview1/0.12.0": {
+    "Wacs.WASI.NN/0.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -153,6 +165,11 @@
       "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
     },
     "WACS/0.12.1": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "WACS.ComponentModel/0.1.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

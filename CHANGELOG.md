@@ -2,6 +2,12 @@
 
 All notable changes to the unity package will be documented in this file.
 
+## [0.11.0]
+- New `Wacs.WasiNN.Sentis` module under `Runtime/WasiNN/` — `IBackend` implementation for WASI-NN that runs ONNX inference through Unity Sentis. Asmdef is gated on `com.unity.sentis` ≥ 2.0.0; without Sentis installed the asmdef compiles to nothing and the rest of the package is unaffected.
+- New bundled `Wacs.WASI.NN.dll` (0.1.0) + `Wacs.ComponentModel.dll` (0.1.0). The wasi-nn host implements both the legacy WITX (`wasi_ephemeral_nn`) and the component-model WIT (`wasi:nn@0.2.0-rc-2024-10-28`) ABIs against a single backend SPI; the Sentis backend plugs in at the SPI level.
+- `ExecutionTarget.CPU` → Sentis `BackendType.CPU`, `ExecutionTarget.GPU` → `BackendType.GPUCompute`, `ExecutionTarget.TPU` → `unsupported-operation`. v0 wires `FP32` / `I32` element types; the other wasi-nn types throw `unsupported-operation` (Sentis 2.x exposes only `float` and `int` directly).
+- Bumps `Wacs.Core.dll` to 0.12.1 and `Wacs.WASI.Preview1.dll` to 0.12.0 so the bundled wasi-nn DLLs link against a coherent core. No public API breaks since 0.10.0; restart the Unity Editor after upgrading so the asset database picks up the refreshed DLLs.
+
 ## [0.10.0]
 - Bumps Wacs.Core to 0.10.0 (matches the latest core runtime release)
 - WASI Preview 1 has been renamed: the bundled `Wacs.WASIp1.dll` is replaced by `Wacs.WASI.Preview1.dll` (0.11.0). New WASI capabilities since 0.8.2: full sock_* surface (accept / recv / send / shutdown), real path_link / path_symlink (gated on AllowHardLinks / AllowSymbolicLinks), fd_fdstat_set_flags / fd_fdstat_set_rights honored, fd_seek u64 fix, poll_oneoff clock-id and write-readiness fixes, plus 100% conformance against `WebAssembly/wasi-testsuite` (43 / 72 fixtures pass; the rest are documented skips).

@@ -1,0 +1,29 @@
+{
+    "name": "Wacs.WasiNN.Sentis",
+    "rootNamespace": "Wacs.WASI.NN.Sentis",
+    "references": [
+        "Unity.Sentis"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Wacs.WASI.NN.dll",
+        "Wacs.ComponentModel.dll",
+        "Wacs.Core.dll",
+        "Wacs.HostBindings.Abstractions.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "WACS_SENTIS"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.unity.sentis",
+            "expression": "2.0.0",
+            "define": "WACS_SENTIS"
+        }
+    ],
+    "noEngineReferences": false
+}
